@@ -1,10 +1,81 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>My DevOps Project</title>
-</head>
-<body style="text-align:center; font-family:Arial; margin-top:100px;">
-    <h1>🚀 Successfully Deployed using Jenkins + Docker + AWS EC2</h1>
-    <h2>Created by Yogesh-AutoDeploy</h2>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeaponVerse — Futuristic 3D Weapon Museum</title>
+    <meta name="description" content="WeaponVerse — futuristic interactive 3D weapon museum." />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./assets/js/vendor/three/three.module.js",
+          "gsap": "./assets/js/vendor/gsap/gsap.js"
+        }
+      }
+    </script>
+  </head>
+  <body data-page="home">
+    <div class="site-shell">
+      <div class="mouse-spotlight"></div>\n      <canvas class="atmosphere-canvas" aria-hidden="true"></canvas>\n      <div class="smoke-layer smoke-layer--one"></div>\n      <div class="smoke-layer smoke-layer--two"></div>\n      <div class="embers"></div>\n      <div class="audio-dock glass-panel">\n        <button class="audio-toggle" type="button">Audio: On</button>\n        <label>Volume <input class="audio-volume" type="range" min="0" max="1" step="0.01" value="0.45"></label>\n      </div>\n      <div class="page-transition"></div>
+        <header class="site-header">\n          <a class="brand" href="index.html"><span class="brand__mark"></span><span>WEAPONVERSE</span></a>\n          <nav class="main-nav">\n            <a href="index.html" data-nav="home">Home</a>\n            <a href="categories.html" data-nav="categories">Categories</a>\n            <a href="timeline.html" data-nav="timeline">Timeline</a>\n            <a href="gallery.html" data-nav="gallery">Gallery</a>\n            <a href="about.html" data-nav="about">About</a>\n          </nav>\n          <button class="nav-toggle" aria-label="Toggle navigation">☰</button>\n        </header>
+
+      <div class="intro-overlay" id="introOverlay">
+        <canvas id="introCanvas"></canvas>
+        <div class="intro-cracks"></div>
+        <div class="intro-flash"></div>
+        <div class="intro-logo-wrap">
+          <p class="eyebrow">Interactive 3D Weapon Museum</p>
+          <h1 class="intro-logo">WEAPONVERSE</h1>
+          <p class="intro-subtitle">History. Engineering. Cinematic inspection.</p>
+        </div>
+      </div>
+      <main>
+        <section class="hero hero--home">
+          <div class="hero__copy">
+            <p class="eyebrow">Premium Interactive Museum</p>
+            <h1>Explore iconic weapons through a cinematic 3D archive.</h1>
+            <p class="lead">A production-quality showcase inspired by Apple product storytelling, Tesla configurators, and AAA weapon inspection experiences.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="categories.html">Enter the museum</a>
+              <a class="btn btn--ghost" href="weapon.html?id=ak47">Inspect AK-47</a>
+            </div>
+            <div class="hero-stats">
+              <article class="glass-panel"><strong>31</strong><span>museum entries</span></article>
+              <article class="glass-panel"><strong>6</strong><span>weapon classes</span></article>
+              <article class="glass-panel"><strong>3D</strong><span>interactive inspection</span></article>
+            </div>
+          </div>
+          <div class="hero__visual glass-panel">
+            <div class="viewer-frame viewer-frame--hero" data-weapon-viewer data-weapon="hk416"></div>
+            <div class="hero__badge glass-panel">HDR reflections • bloom • orbit inspection</div>
+          </div>
+        </section>
+        <section class="section section--featured">
+          <div class="section-heading">
+            <p class="eyebrow">Curated Wings</p>
+            <h2>Navigate the museum by category.</h2>
+          </div>
+          <div class="category-grid" id="homeCategoryGrid"></div>
+        </section>
+        <section class="section section--split">
+          <div class="glass-panel manifesto">
+            <p class="eyebrow">Design Language</p>
+            <h2>Designed as an educational showcase, not a game.</h2>
+            <p>WeaponVerse focuses on mechanical design, historical context, and cinematic presentation. Every transition, highlight, and callout is built to encourage inspection and learning.</p>
+          </div>
+          <div class="glass-panel museum-highlights" id="museumHighlights"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>WeaponVerse — an educational and historical interactive museum experience.</p>
+        <p>Use locally with freely licensed assets only.</p>
+      </footer>
+    </div>
+    <script type="module" src="assets/js/pages/home.js"></script>
+  </body>
 </html>

@@ -1,0 +1,56 @@
+[
+  {
+    "url": "http://127.0.0.1:8123/index.html?skipIntro=1",
+    "title": "WeaponVerse — Futuristic 3D Weapon Museum",
+    "errors": [],
+    "h1": "Explore iconic weapons through a cinematic 3D archive.",
+    "bodyWidth": 1440,
+    "viewportWidth": 1440,
+    "viewerCount": 2
+  },
+  {
+    "url": "http://127.0.0.1:8123/categories.html?category=assault-rifles",
+    "title": "WeaponVerse — Categories",
+    "errors": [],
+    "h1": "Browse every category in the archive.",
+    "bodyWidth": 1440,
+    "viewportWidth": 1440,
+    "viewerCount": 9
+  },
+  {
+    "url": "http://127.0.0.1:8123/timeline.html",
+    "title": "WeaponVerse — Timeline",
+    "errors": [],
+    "h1": "A curated timeline of influential weapon platforms.",
+    "bodyWidth": 1440,
+    "viewportWidth": 1440,
+    "viewerCount": 1
+  },
+  {
+    "url": "http://127.0.0.1:8123/gallery.html",
+    "title": "WeaponVerse — Gallery",
+    "errors": [],
+    "h1": "High-contrast gallery cards with live 3D previews.",
+    "bodyWidth": 1440,
+    "viewportWidth": 1440,
+    "viewerCount": 13
+  },
+  {
+    "url": "http://127.0.0.1:8123/about.html",
+    "title": "WeaponVerse — About",
+    "errors": [],
+    "h1": "Why WeaponVerse exists.",
+    "bodyWidth": 1440,
+    "viewportWidth": 1440,
+    "viewerCount": 1
+  },
+  {
+    "url": "http://127.0.0.1:8123/weapon.html?id=ak47",
+    "title": "WeaponVerse — AK-47",
+    "errors": [],
+    "h1": "AK-47",
+    "bodyWidth": 1440,
+    "viewportWidth": 1440,
+    "viewerCount": 2
+  }
+]

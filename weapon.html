@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeaponVerse — Weapon Detail</title>
+    <meta name="description" content="WeaponVerse — futuristic interactive 3D weapon museum." />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./assets/js/vendor/three/three.module.js",
+          "gsap": "./assets/js/vendor/gsap/gsap.js"
+        }
+      }
+    </script>
+  </head>
+  <body data-page="weapon">
+    <div class="site-shell">
+      <div class="mouse-spotlight"></div>\n      <canvas class="atmosphere-canvas" aria-hidden="true"></canvas>\n      <div class="smoke-layer smoke-layer--one"></div>\n      <div class="smoke-layer smoke-layer--two"></div>\n      <div class="embers"></div>\n      <div class="audio-dock glass-panel">\n        <button class="audio-toggle" type="button">Audio: On</button>\n        <label>Volume <input class="audio-volume" type="range" min="0" max="1" step="0.01" value="0.45"></label>\n      </div>\n      <div class="page-transition"></div>
+        <header class="site-header">\n          <a class="brand" href="index.html"><span class="brand__mark"></span><span>WEAPONVERSE</span></a>\n          <nav class="main-nav">\n            <a href="index.html" data-nav="home">Home</a>\n            <a href="categories.html" data-nav="categories">Categories</a>\n            <a href="timeline.html" data-nav="timeline">Timeline</a>\n            <a href="gallery.html" data-nav="gallery">Gallery</a>\n            <a href="about.html" data-nav="about">About</a>\n          </nav>\n          <button class="nav-toggle" aria-label="Toggle navigation">☰</button>\n        </header>
+
+      <main>
+        <section class="hero hero--weapon">
+          <div class="hero__copy" id="weaponHeroCopy"></div>
+          <aside class="spec-rail glass-panel" id="weaponSpecRail"></aside>
+        </section>
+        <section class="section section--viewer">
+          <div class="viewer-layout">
+            <div class="viewer-stack glass-panel">
+              <div class="viewer-toolbar">
+                <span class="status-pill" id="assetStatus">Procedural exhibit active</span>
+                <button class="btn btn--ghost btn--small" id="resetCameraBtn" type="button">Reset camera</button>
+              </div>
+              <div class="viewer-frame viewer-frame--detail" id="weaponViewer"></div>
+            </div>
+            <aside class="component-panel glass-panel" id="componentPanel">
+              <p class="eyebrow">Component Focus</p>
+              <h3>Select a hotspot</h3>
+              <p>Click any highlighted weapon component to fly the camera in and reveal its role, materials, and compatible accessories.</p>
+            </aside>
+          </div>
+        </section>
+        <section class="section detail-grid">
+          <article class="glass-panel" id="weaponHistory"></article>
+          <article class="glass-panel" id="weaponVariants"></article>
+          <article class="glass-panel" id="weaponGallery"></article>
+          <article class="glass-panel" id="weaponTimeline"></article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>WeaponVerse — an educational and historical interactive museum experience.</p>
+        <p>Use locally with freely licensed assets only.</p>
+      </footer>
+    </div>
+    <script type="module" src="assets/js/pages/weapon.js"></script>
+  </body>
+</html>

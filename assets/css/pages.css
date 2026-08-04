@@ -1,0 +1,18 @@
+.hero__copy { position: relative; z-index: 2; }
+.manifesto p:last-child { margin-bottom: 0; }
+.museum-highlights { display: grid; gap: 14px; align-content: start; }
+.highlight-row { display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.highlight-row:last-child { border-bottom: 0; }
+.highlight-row strong { font-size: 1.05rem; }
+.weapon-card__top, .gallery-card__top { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
+.weapon-card h3 a, .gallery-card h3 a { text-decoration: none; }
+.weapon-card small, .gallery-card small { color: var(--muted); }
+.category-card .category-link { margin-top: 16px; display: inline-flex; color: var(--accent-soft); }
+.about-card ul { margin: 14px 0 0; padding-left: 18px; color: var(--muted); line-height: 1.7; }
+.component-panel dl { margin: 0; display: grid; gap: 14px; }
+.component-panel dt { color: var(--accent-soft); font-size: .8rem; text-transform: uppercase; letter-spacing: .16em; }
+.component-panel dd { margin: 0; color: var(--muted); }
+.detail-grid article { padding: 24px; }
+.detail-grid ul { color: var(--muted); line-height: 1.7; }
+.hero--weapon .hero__copy h1 { max-width: 10ch; }
+.hero--weapon .hero__copy .meta-row { margin-top: 18px; }
